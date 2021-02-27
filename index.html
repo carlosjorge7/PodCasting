@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app-podcast</title>
+    <!--Bootstrap 4 - estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Font awesome - iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+</head>
+<body>
+
+    
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a href="javascript:location.reload()" class="navbar-brand"><img id="img_podcast" width="40" height="40"> <strong>PODCASTING</strong></a>
+            <button id="boton_acerca" class="btn btn-outline-secondary btn-sm" ><i class="fas fa-home"></i> Acerca de</button>
+            <button id="boton_podcast" class="btn btn-outline-secondary btn-sm"><i class="fas fa-headphones"></i> Podcast</button>
+        </div>
+      
+    </nav>
+
+    <div class="container">
+        <!-- Acerca de-->
+        <div id="acerca" style="margin-top: 50px;">
+           <div class="card">
+               <div class="card-header" style="text-align: center;" >
+                <h3><i class="fas fa-home"></i> Acerca de</h3>
+               </div>
+           </div>
+           <br>
+            <div class="card">
+                <div class="card-header" style="text-align: center;">
+                 <strong> Informática variada</strong>
+                </div>
+                <div class="card-body" style="text-align: center;">
+                    <h5 id="title"></h5>
+                    <img src="./img/tecnologia.jpg" >
+                </div>
+               <div style="text-align: center;">
+                    <a id="link_url" class="btn btn-success" target="_blank">Ve a la web oficial</a>
+               </div>
+               <br>
+               <footer style="text-align: center;">
+                   Todos los derechos reservados al <a href="https://ugeek.github.io" target="_blank">sitio oficial</a>&copy;
+               </footer>
+               <br>
+              </div>
+        </div>
+
+        <!-- All podcast del feed -->
+        <div id="podcast" style="display: none;">
+            <div class="card" style="margin-top: 50px;">
+                <div class="card-header" style="text-align: center;">
+                 <h3><i class="fas fa-headphones"></i> Podcast</h3>
+                </div>
+            </div>
+            <br>
+           <!-- Contenido -->
+            <div id="contenido">
+                <!-- Aqui van los podcast -->
+            </div>
+           
+        
+        </div>
+     
+        
+    </div>
+   
+
+
+    
+</body>
+<!--MY SCRIPT -->
+<script src="./index.js"></script>
+
+ 
+</html>
